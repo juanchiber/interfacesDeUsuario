@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <header class="header">
+        <section class="menu">
+            <img class="icon icon-menu" id="menu" src="./img/icons/menu.svg" alt="icon-menu">
+            <img class="icon icon-search-mobile" id="search" src="./img/icons/search.svg" alt="icon-search-mobile">
+        </section>
+        <section class="logos">
+            <a href="home.html">
+                <img class="logo" src="./img/gral/logo.png" alt="logo">
+            </a>
+        </section>
+        <section class="input">
+            <input type="text" placeholder="Buscar juego..." id="search-game" maxlength="30">
+            <img class="icon icon-search" src="./img/icons/search.svg" alt="icon-search">
+        </section>
+        <section class="cart-heart">
+            <img class="icon icon-cart" id="icon-cart" src="./img/icons/shopping-cart.svg" alt="icon-cart">   
+            <img class="icon icon-heart" src="./img/icons/heart.svg" alt="icon-heart">
+        </section>
+        <section class="profile">
+            <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">  
+        </section>
+    </header>
+    <nav class="navbar-container">
+        <nav class="navbar-menu" id="navbar-menu">
+            <ul>
+                <li><a href="home.html"><span>Inicio</span></a><img class="icon " src="img/icons/house.svg" alt="icon-home"></li>
+                <li><span>Recientes</span><img class="icon " src="img/icons/clock-1.svg" alt="icon-clock"></li>
+                <li><span>Nuevos</span><img class="icon " src="img/icons/plus-circle.svg" alt="icon-plus-circle"></li>
+                <li><span>Tendencias</span><img class="icon " src="img/icons/diagram.svg" alt="icon-diagram"></li>
+                <li><span>Destacados</span><img class="icon " src="img/icons/medal-star.svg" alt="icon-medal-star"></li>
+                <li><span>Acción</span></li>
+                <li><span>Carreras</span></li>
+                <li><span>Clásicos</span></li>
+                <li><span>Deportes</span></li>
+                <li><span>Disparos</span></li>
+                <li><span>Estrategia</span></li>
+                <li><span>Puzzle</span></li>
+                <li><span>Contáctanos</span><img class="icon " src="img/icons/message-question.svg" alt="icon-message-question"></li>
+            </ul>
+        </nav>
+        <nav class="navbar-profile" id="navbar-profile">
+            <ul>
+                <li><img class="icon icon-profile-circled" src="img/icons/profile-circled.svg" alt="icon-profile-circled"><span>Mi perfil</span></li>
+                <li><img class="icon icon-setting" src="img/icons/setting-2.svg" alt="icon-setting"><span>Configuración</span></li>
+                <li><img class="icon icon-tick-circle" src="img/icons/tick-circle.svg" alt="icon-tick-circle"><span>Privacidad</span></li>
+                <li><img class="icon icon-book" src="img/icons/book-1.svg" alt="icon-book"><span>Términos de Uso</span></li>
+                <li><img class="icon icon-register" src="img/icons/register.svg" alt="icon-register"><a href="index.html"><span>Volver a Registro</span></a></li>
+                <li><img class="icon icon-login" src="img/icons/login.svg" alt="icon-login"><a href="login.html"><span>Cerrar sesión</span></a></li>
+            </ul>
+        </nav>
+    </nav>
+    <main class="main-container">
+        <section class="container-Cart" id="container-Cart"></section>
+        <section class="game-container">
+            <section class="game-box">
+                <section class="breadcumbs">
+                    <div class="breadcrumb-content">
+                        <button class="btn-back"><a href="home.html"><img src="./img/icons/arrow-circle-left.svg" class="btn-back" alt="Back"></a></button>
+                        <p>>  Home  >  Destacados  >  4 en línea</p>
+                    </div>
+                </section>
+                <section class="play-game">
+                    <div class="game-content" id="game-content">
+                        <section class="img-play-game" id="img-play-game">
+                            <img src="./img/games/highlights/junta-4.jpg" alt="Junta 4">
+                            <div class="wrapper">
+                                <button class="btn-play" id="btn-play">Jugar</button>
+                            </div>
+                        </section>
+                        <section id="choose-game" class="choose-game">
+                            <div id="dimensionGame" class="dimensionGame">
+                                <button id="4">4 en línea</button>
+                                <button id="5">5 en línea</button>
+                                <button id="6">6 en línea</button>
+                                <button id="7">7 en línea</button>
+                            </div>
+                            <form action="" id="form-game" class="form-game">
+                                <label for="player1">Jugador 1:</label>
+                                <input type="text" name="player1" id="player1" placeholder="Jugador 1">
+                                <div id="choose-player1" class="choose-player1">
+                                    <input type="image" src="./img/gral/messi.png" alt="Messi" class="choose-player-img1" id="messi">
+                                    <input type="image" src="./img/gral/mateo.png" alt="Mateo" class="choose-player-img1" id="mateo">
+                                    <input type="image" src="./img/gral/thiago.png" alt="Thiago" class="choose-player-img1" id="thiago">
+                                </div>
+                                <label for="player2">Jugador 2:</label>
+                                <input type="text" name="player2" id="player2" placeholder="Jugador 2">
+                                <div id="choose-player2" class="choose-player2">
+                                    <input type="image" src="./img/gral/van-gaal.png" alt="Van Gaal" class="choose-player-img2" id="gaal">
+                                    <input type="image" src="./img/gral/ribery.png" alt="Ribery" class="choose-player-img2" id="ribery">
+                                    <input type="image" src="./img/gral/robben.png" alt="Robben" class="choose-player-img2" id="robben">
+                                </div>
+                                <button type="submit" id="btn-confirm-game" class="btn-confirm-game">Confirmar</button>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="canvas-container">
+                        <button type="button" id="restart-game" class="restart-game">Reiniciar</button>
+                        <canvas class="canvas" id="canvas" width="1086" height="573" style="border: 1px solid;"></canvas>
+                        <h3 id="timer-game" class="timer-game"></h3>
+                        <h3 id="shift-game" class="shift-game"></h3>
+                        <h3 id="winner-game" class="winner-game"></h3>
+                    </div>
+                </section>
+                <section class="game-desc" id="game-desc">
+                    <h1>Junta 4 fichita´ BOBO</h1>
+                    <article class="share-section" id="share-section">
+                        <button class="share-btn" id="share-btn"><img src="./img/icons/share-android.svg" alt="icon-share">Compartir</button>
+                    </article>                    
+                    <div class="classification-game">
+                        <h3>Clasificacion:   8,6 (25455 votos)</h3>
+                        <h3>Publicado en:    diciembre 2022</h3>
+                        <h3>Tecnologia:      HTML5</h3>
+                        <h3>Plataforma:      Browser (desktop, mobile, tablet)</h3>
+                        <h3>Clasificacion:   Juegos > Puzzle > Mesa</h3>
+                    </div>
+                    <div class="instructions-game">
+                        <h2>Como se juega</h2><br>
+                        <h3>Elije tu personaje favorito</h3>
+                        <section class="choose-players">
+                            <div>
+                                <p>Del lado argentino, los personajes disponibles pertenecen a la familia Messi, elegi entre Lionel, Thiago o Mateo para enfrentar a los Paises Bajos!</p>
+                                <img src="./img/gral/messi.png" alt="Leo Messi">
+                                <img src="./img/gral/mateo.png" alt="Mateo Messi">
+                                <img src="./img/gral/thiago.png" alt="Thiago Messi">
+                            </div>
+                            <div>
+                                <p>Del lado de los Paises Bajos, los personajes disponibles para enfrentar a Argentina son el criticado DT Van Gaal, y dos historicos, Robben y Ribery</p>
+                                <img src="./img/gral/van-gaal.png" alt="Van Gaal">
+                                <img src="./img/gral/ribery.png" alt="Ribery">
+                                <img src="./img/gral/robben.png" alt="Robben">
+                            </div>
+                        </section>
+                        <h3>Modos de juego</h3>
+                        <p> Junta 4 fichita' bobo! consta de 4 modos de juego para que elijas el que más te gusta. 4 en línea (tablero de 6x7), 5 en línea (tablero de 7x8), 6 en línea (tablero de 8x9) y 7 en línea (tablero de 9x10).</p>
+                        <p> Escoge el campo de juego que más se adapte a tus facultades y revivi la famosa Batalla de Lusail vivida en el mundial Qatar 2022 ante los Paises Bajos</p><br>
+                        <h3>Objetivo</h3>
+                        <p> El objetivo de este juego consiste en colocar cuatro fichas(o las que correspondan al modo de juego elegido) en una fila contínua vertical, 
+                            horizontal o diagonalmente. Se juega sobre un tablero de 6x7 (o el que corresponda al modo de juego elegido) casillas que al empezar está vacío.<br>
+                            Ambos jugadores sitúan sus fichas (una por movimiento) en el tablero. La regla para colocarlas 
+                            consiste en que estas siempre "caen hasta abajo". Es decir una ficha puede ser colocada bien en la 
+                            parte inferior de una columna o bien sobre otra ficha de alguna otra columna.</p><br>
+                        <p> La partida termina si una de las siguientes condiciones se cumple:</p><br>
+                        <p>-Uno de los jugadores coloca cuatro o más fichas en una línea contínua vertical, horizontal o diagonalmente. Este jugador gana la partida.</p><br>
+                        <p>-Todas las casillas del tablero están ocupadas y ningún jugador cumple la condición anterior para ganar. En este caso la partida finaliza en empate.</p>
+                    </div>
+                    <div class="images-game">
+                        <div class="example-game-won">
+                            <h2>Ejemplo partida ganada</h2>
+                            <img class="img-win" src="./img/gral/game-win.png" alt="Partida ganada">
+                        </div>
+                        <div class="example">
+                            <h2>Comandos</h2>
+                            <div class="commands">
+                                <!--<img class="img-commands" src="./img/gral/teclado.png" alt="teclado">-->
+                                <img class="img-commands" src="./img/gral/mouse.png" alt="mouse">
+                            </div>
+                            <p>- Arrastra una ficha con el click izquierdo del mouse hasta la columna delimitada por la flecha
+                                donde quieras soltarla para realizar tu movimiento.</p>
+                        </div>
+                    </div>
+                    <div class="similar-games">
+                        <div class="gameplay">
+                            <h2>Gameplay</h2>
+                            <a href="https://www.youtube.com/watch?v=JBSbiilzg9U" target="_blank">
+                                <img class="img-gameplay" src="./img/gral/como-se-juega.jpg" alt="Tutorial">
+                            </a>
+                        </div>
+                        <div class="similar">
+                            <h2>Juegos similares</h2>
+                            <a href="https://www.minijuegos.com/juego/uno-original">1. Uno</a>
+                            <a href="https://www.minijuegos.com/juego/pool-live-pro">2. Pool live pro</a>
+                            <a href="https://www.minijuegos.com/juego/mini-golf">3. Mini-golf</a>
+                            <a href="https://www.minijuegos.com/juego/dynamons-5">4. Dynamons 5</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="foro">
+                    <section class="comments">
+                        <div class="title-box">
+                            <img class="icon-message" id="icon-message" src="./img/icons/message-question.svg" alt="icon-message">
+                            <h1>Comentarios</h1>
+                        </div>
+                        <div class="box">
+                            <div class="up-box">
+                                <div class="user-comment-box">
+                                    <div class="user-box">
+                                        <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">
+                                        <h1>Tú</h1>
+                                    </div>
+                                    <div class="game-rating">
+                                        <p>Valora este juego:</p>
+                                        <div class="game-stars">
+                                            <img class="icon-star" id="icon-star" src="./img/icons/star-1.svg" alt="icon-star">
+                                            <img class="icon-star" id="icon-star" src="./img/icons/star-1.svg" alt="icon-star">
+                                            <img class="icon-star" id="icon-star" src="./img/icons/star-1.svg" alt="icon-star">
+                                            <img class="icon-star" id="icon-star" src="./img/icons/star-1.svg" alt="icon-star">
+                                            <img class="icon-star" id="icon-star" src="./img/icons/star-1.svg" alt="icon-star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down-box">
+                                <textarea name="" id="textarea" cols="30" rows="10" placeholder="¿Qué piensas de este juego?"></textarea>
+                                <button class="btn-game">Enviar</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="latest-comments">
+                        <div class="title-box">
+                            <img class="icon-message" id="icon-message" src="./img/icons/message-question.svg" alt="icon-message">
+                            <h1>Últimos comentarios</h1>
+                        </div>
+
+                        <div class="box">
+                            <div class="up-box">
+                                <div class="user-comment-box">
+                                    <div class="user-box">
+                                        <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">
+                                        <p>elpipadebokita</p>
+                                    </div>
+                                    <div class="game-rating">
+                                        <p>3 me gusta</p>
+                                        <div class="game-stars">
+                                            <img src="./img/icons/like-1.svg" alt="icon-like">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down-box-not-user">
+                                <h4>No puedo embocar la fichita </h4>
+                                <p>10 de Septiembre de 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="up-box">
+                                <div class="user-comment-box">
+                                    <div class="user-box">
+                                        <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">
+                                        <p>leomessiGOAT</p>
+                                    </div>
+                                    <div class="game-rating">
+                                        <p>+99 me gusta</p>
+                                        <div class="game-stars">
+                                            <img src="./img/icons/like-1.svg" alt="icon-like">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down-box-not-user">
+                                <h4>eta bueno el jueguito pa, aca le estoy ganando al bobo de rodri de pol. Saludo </h4>
+                                <p>9 de Septiembre de 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="up-box">
+                                <div class="user-comment-box">
+                                    <div class="user-box">
+                                        <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">
+                                        <p>peluca1000ei</p>
+                                    </div>
+                                    <div class="game-rating">
+                                        <p>12 me gusta</p>
+                                        <div class="game-stars">
+                                            <img src="./img/icons/like-1.svg" alt="icon-like">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down-box-not-user">
+                                <h4>Viva la libertad carajooooo!!</h4>
+                                <p>8 de Septiembre de 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="up-box">
+                                <div class="user-comment-box">
+                                    <div class="user-box">
+                                        <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">
+                                        <p>jormancampuasco</p>
+                                    </div>
+                                    <div class="game-rating">
+                                        <p>27 me gusta</p>
+                                        <div class="game-stars">
+                                            <img src="./img/icons/like-1.svg" alt="icon-like">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down-box-not-user">
+                                <h4>Este jueguito es más malo que yo y el pulpo gonzales juntos</h4>
+                                <p>6 de Septiembre de 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="up-box">
+                                <div class="user-comment-box">
+                                    <div class="user-box">
+                                        <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">
+                                        <p>martindamechelis</p>
+                                    </div>
+                                    <div class="game-rating">
+                                        <p>16 me gusta</p>
+                                        <div class="game-stars">
+                                            <img src="./img/icons/like-1.svg" alt="icon-like">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down-box-not-user">
+                                <h4>Perdi porque jugue con jetstress</h4>
+                                <p>2 de Septiembre de 2023</p>
+                            </div>
+                        </div>
+
+                    </section>
+                </section>
+            </section>
+
+            <section class="publicity-box">
+                <section class="publicity">
+                    <img src="./img/publicity/coca-cola.gif" alt="Publicidad Coca-Cola">
+                    <img src="./img/publicity/converse.gif" alt="Publicidad Converse">
+                    <img src="./img/publicity/star-plus.gif" alt="Publicidad Star+">
+                    <img src="./img/publicity/starbucks.gif" alt="Publicidad Starbucks">
+                    <img src="./img/publicity/mc-donald.gif" alt="Publicidad McDonallds">
+                </section>
+                
+                <section class="img-games" id="img-games"></section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1>Acerca de ¡Game Galaxy!</h1>
+        <p>¡Bienvenidos a GameGalaxy, tu fuente de diversión sin fin! Ofrecemos una amplia
+            selección de juegos gratis y en línea. Desde emocionantes juegos de acción hasta
+            desafiantes carreras y estrategias, tenemos algo para todos.
+            <br>También tenemos juegos de aventuras y versiones de juegos de mesa clásicos. Únete a nosotros y empieza a
+            jugar en GameGalaxy, donde la diversión nunca termina.
+        </p>
+        <section class="btn btn-footer">
+            <button><img src="img/icons/whatsapp.svg" alt="icon-whatsapp"><span>WhatsApp</span></button>
+            <button><img src="img/icons/facebook.svg" alt="icon-facebook"><span>Facebook</span></button>
+            <button><img src="img/icons/instagram.svg" alt="icon-instagram"><span>Instagram</span></button>
+        </section>
+        <section class="info-footer">
+            <ul>
+                <li><img src="img/icons/scan-barcode.svg" alt="icon-scan-barcode"><span>Categorías</span></li>
+                <li><img src="img/icons/code-tech-dev.svg" alt="icon-code-tech"><span>Desarrolladores</span></li>
+                <li><img src="img/icons/book-1.svg" alt="icon-book"><span>Términos de Uso</span></li>
+                <li><img src="img/icons/tick-circle.svg" alt="icon-tick-circle"><span>Privacidad</span></li>
+                <li><img src="img/icons/warning-2.svg" alt="icon-warning"><span>Cookies</span></li>
+            </ul>
+            <section class="btn btn-footer">
+                <button><img src="img/icons/whatsapp.svg" alt="icon-whatsapp"><span>WhatsApp</span></button>
+                <button><img src="img/icons/facebook.svg" alt="icon-facebook"><span>Facebook</span></button>
+                <button><img src="img/icons/instagram.svg" alt="icon-instagram"><span>Instagram</span></button>
+            </section>
+        </section>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/Tablero.js"></script>
+    <script src="js/Ficha.js"></script>
+    <script src="js/Flecha.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

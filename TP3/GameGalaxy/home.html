@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game Galaxy</title>
+</head>
+<body>
+    <div class="loading-container" id="loading-container">
+        <div class="loader"></div>
+        <div class="progress">0%</div>
+    </div>
+    <div class="page-content" style="display: none">
+    <header class="header">
+        <section class="menu">
+            <img class="icon icon-menu" id="menu" src="./img/icons/menu.svg" alt="icon-menu">
+            <img class="icon icon-search-mobile" id="search" src="./img/icons/search.svg" alt="icon-search-mobile">
+        </section>
+        <section class="logos">
+            <img class="logo" src="./img/gral/logo.png" alt="logo">
+        </section>
+        <section class="input">
+            <input type="text" placeholder="  Buscar juego..." maxlength="30">
+            <img class="icon icon-search" src="./img/icons/search.svg" alt="icon-search">
+        </section>
+        <section class="cart-heart">
+            <img class="icon icon-cart" id="icon-cart" src="./img/icons/shopping-cart.svg" alt="icon-cart">   
+            <img class="icon icon-heart" src="./img/icons/heart.svg" alt="icon-heart">
+        </section>
+        <section class="profile">
+            <img class="icon icon-profile" id="user-profile" src="./img/icons/profile-circle.svg" alt="icon-profile">  
+        </section>
+    </header>
+    <nav class="navbar-container">
+        <nav class="navbar-menu" id="navbar-menu">
+            <ul>
+                <li><a href="home.html"><span>Inicio</span></a><img class="icon " src="img/icons/house.svg" alt="icon-home"></li>
+                <li><span>Recientes</span><img class="icon " src="img/icons/clock-1.svg" alt="icon-clock"></li>
+                <li><span>Nuevos</span><img class="icon " src="img/icons/plus-circle.svg" alt="icon-plus-circle"></li>
+                <li><span>Tendencias</span><img class="icon " src="img/icons/diagram.svg" alt="icon-diagram"></li>
+                <li><span>Destacados</span><img class="icon " src="img/icons/medal-star.svg" alt="icon-medal-star"></li>
+                <li><span>Acción</span></li>
+                <li><span>Carreras</span></li>
+                <li><span>Clásicos</span></li>
+                <li><span>Deportes</span></li>
+                <li><span>Disparos</span></li>
+                <li><span>Estrategia</span></li>
+                <li><span>Puzzle</span></li>
+                <li><span>Contáctanos</span><img class="icon " src="img/icons/message-question.svg" alt="icon-message-question"></li>
+            </ul>
+        </nav>
+        <nav class="navbar-profile" id="navbar-profile">
+            <ul>
+                <li><img class="icon icon-profile-circled" src="img/icons/profile-circled.svg" alt="icon-profile-circled"><span>Mi perfil</span></li>
+                <li><img class="icon icon-setting" src="img/icons/setting-2.svg" alt="icon-setting"><span>Configuración</span></li>
+                <li><img class="icon icon-tick-circle" src="img/icons/tick-circle.svg" alt="icon-tick-circle"><span>Privacidad</span></li>
+                <li><img class="icon icon-book" src="img/icons/book-1.svg" alt="icon-book"><span>Términos de Uso</span></li>
+                <li><img class="icon icon-register" src="img/icons/register.svg" alt="icon-register"><a href="index.html"><span>Volver a Registro</span></a></li>
+                <li><img class="icon icon-login" src="img/icons/login.svg" alt="icon-login"><a href="login.html"><span>Cerrar sesión</span></a></li>
+            </ul>
+        </nav>
+    </nav>
+    <main class="main-container">
+        <section class="container-Cart" id="container-Cart"></section>
+        <section class="game gameHighlightsWeek" id="gameHighlightsWeek">
+            <h1>DESTACADOS DE LA SEMANA</h1>
+            <section class="carousel" id="carouselHighlights">
+                <section class="buttons" id="Highlights">
+                    <button class="carousel-btn prevButton">
+                        <svg class="icon-prevButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m13.26 15.53-3.52001-3.53 3.52001-3.53003"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn nextButton">
+                        <svg class="icon-nextButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m10.74 15.53 3.52-3.53-3.52-3.53003"/>
+                            </g>
+                        </svg>
+                        <!--<img src="./img/icons/arrow-circle-left.svg" alt="" class="icon-prevButton">-->
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section class="game gameSports" id="gameSports">
+            <h1>JUEGOS DE DEPORTES</h1>
+            <section class="carousel" id="carouselSports">
+                <section class="buttons" id="Sports">
+                    <button class="carousel-btn prevButton">
+                        <svg class="icon-prevButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m13.26 15.53-3.52001-3.53 3.52001-3.53003"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn nextButton">
+                        <svg class="icon-nextButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m10.74 15.53 3.52-3.53-3.52-3.53003"/>
+                            </g>
+                        </svg>
+                        <!--<img src="./img/icons/arrow-circle-left.svg" alt="" class="icon-prevButton">-->
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section class="game gameCareer" id="gameCareer">
+            <h1>JUEGOS DE CARRERAS</h1>
+            <section class="carousel" id="carouselCareer">
+                <section class="buttons" id="Career">
+                    <button class="carousel-btn prevButton">
+                        <svg class="icon-prevButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m13.26 15.53-3.52001-3.53 3.52001-3.53003"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn nextButton">
+                        <svg class="icon-nextButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m10.74 15.53 3.52-3.53-3.52-3.53003"/>
+                            </g>
+                        </svg>
+                        <!--<img src="./img/icons/arrow-circle-left.svg" alt="" class="icon-prevButton">-->
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section class="game gameStrategy" id="gameStrategy">
+            <h1>JUEGOS DE ESTRATEGIA</h1>
+            <section class="carousel" id="carouselStrategy">
+                <section class="buttons" id="Strategy">
+                    <button class="carousel-btn prevButton">
+                        <svg class="icon-prevButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m13.26 15.53-3.52001-3.53 3.52001-3.53003"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn nextButton">
+                        <svg class="icon-nextButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m10.74 15.53 3.52-3.53-3.52-3.53003"/>
+                            </g>
+                        </svg>
+                        <!--<img src="./img/icons/arrow-circle-left.svg" alt="" class="icon-prevButton">-->
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section class="game gamePay" id="gamePay">
+            <h1>JUEGOS PAGOS</h1>
+            <section class="carousel carouselPay" id="carouselPay">
+                <section class="buttons" id="Pay">
+                    <button class="carousel-btn prevButton">
+                        <svg class="icon-prevButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m13.26 15.53-3.52001-3.53 3.52001-3.53003"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn nextButton">
+                        <svg class="icon-nextButton" fill="#A65800" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 5.5228 4.47715 10 10 10z" stroke-miterlimit="10"/>
+                                <path d="m10.74 15.53 3.52-3.53-3.52-3.53003"/>
+                            </g>
+                        </svg>
+                        <!--<img src="./img/icons/arrow-circle-left.svg" alt="" class="icon-prevButton">-->
+                    </button>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <h1>Acerca de ¡Game Galaxy!</h1>
+        <p>¡Bienvenidos a GameGalaxy, tu fuente de diversión sin fin! Ofrecemos una amplia
+            selección de juegos gratis y en línea. Desde emocionantes juegos de acción hasta
+            desafiantes carreras y estrategias, tenemos algo para todos.
+            <br>También tenemos juegos de aventuras y versiones de juegos de mesa clásicos. Únete a nosotros y empieza a
+            jugar en GameGalaxy, donde la diversión nunca termina.
+        </p>
+        <section class="btn btn-footer">
+            <button><img src="img/icons/whatsapp.svg" alt="icon-whatsapp"><span>WhatsApp</span></button>
+            <button><img src="img/icons/facebook.svg" alt="icon-facebook"><span>Facebook</span></button>
+            <button><img src="img/icons/instagram.svg" alt="icon-instagram"><span>Instagram</span></button>
+        </section>
+        <section class="info-footer">
+            <ul>
+                <li><img src="img/icons/scan-barcode.svg" alt="icon-scan-barcode"><span>Categorías</span></li>
+                <li><img src="img/icons/code-tech-dev.svg" alt="icon-code-tech"><span>Desarrolladores</span></li>
+                <li><img src="img/icons/book-1.svg" alt="icon-book"><span>Términos de Uso</span></li>
+                <li><img src="img/icons/tick-circle.svg" alt="icon-tick-circle"><span>Privacidad</span></li>
+                <li><img src="img/icons/warning-2.svg" alt="icon-warning"><span>Cookies</span></li>
+            </ul>
+            <section class="btn btn-footer">
+                <button><img src="img/icons/whatsapp.svg" alt="icon-whatsapp"><span>WhatsApp</span></button>
+                <button><img src="img/icons/facebook.svg" alt="icon-facebook"><span>Facebook</span></button>
+                <button><img src="img/icons/instagram.svg" alt="icon-instagram"><span>Instagram</span></button>
+            </section>
+        </section>
+    </footer>
+    <script src="js/games.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</div>
+</body>
+</html>

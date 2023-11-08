@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro Game Galaxy</title>
+</head>
+<body>
+    <header class="header-register">
+        <section class="register-logo">
+            <img class="logo" src="./img/gral/logo.png" alt="logo">
+        </section>
+        <section class="register-user">
+            <button class="play-invited"><a href="index.html">Jugar como invitado</a></button>
+            <img class="icon-icon-profile" id="user-profile" src="img/icons/profile-circle.svg" alt="icon-profile">    
+        </section>
+    </header>
+    
+    <main class="main-container">
+
+        <section class="register" id="register">
+            <section class="desc-register" id="desc-register">
+                <img class="img-register-logo" src="./img/gral/mario-luigi.png" alt="Mario y Luigi">
+                <p>
+                    ¡Descubre un mundo de ventajas al registrarte! Accede a contenido exclusivo, participa en competencias
+                    emocionantes, recibe ofertas especiales y forma parte de una comunidad global de jugadores. ¡Regístrate
+                    ahora para vivir una experiencia de juego inigualable!
+                </p>
+            </section>
+            <section class="register-box" id="register-box">
+                <h1>Registrarse</h1>
+                <form class="form" id="form" action="">
+                    <label for="name-lastName">Nombre y apellido *</label>
+                    <input type="text" placeholder="Ingrese nombre y apellido..." name="name-lastName" id="name-lastName">
+                    <label for="nickname">Nombre de usuario</label>
+                    <input type="text" placeholder="Ingrese usuario..." name="nickname" id="nickname">
+                    <label for="age">Edad *</label>
+                    <input type="text" placeholder="Ingrese su edad..." name="age" id="age">
+                    <label for="email">Email *</label>
+                    <input type="email" placeholder="Ingrese su email..." name="email" id="email">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" placeholder="Ingrese su contraseña..." name="password" id="password">
+                    <label for="repeat-password">Repetir contraseña *</label>
+                    <input type="password" placeholder="Repite la contraseña..." name="repeat-password" id="repeat-password">
+
+                    <section class="captcha">
+                        <img src="./img/publicity/captcha.gif" alt="captcha">
+                    </section>
+
+                    <section class="register-buttons" id="register-buttons">
+                        <button class="register-btn"><a href="index.html">Registrarse</a></button>
+                        <button class="register-google-btn">
+                            <img src="img/icons/google.svg" alt="icon-google">
+                            <a href="index.html">Registrarse con Google</a>
+                        </button>
+                        <button class="register-fb-btn">
+                            <img src="img/icons/facebook.svg" alt="icon-facebook">
+                            <a href="index.html">Registrarse con Facebook</a>
+                        </button>
+                        <div>
+                            <p>¿Ya tienes cuenta?</p>
+                            <button class="register-iniciar-btn"><a href="login.html">Iniciar sesion</a></button>
+                        </div>
+                    </section>
+                </form>
+            </section>
+        </section>
+        
+    </main>
+    
+    <script src="js/games.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

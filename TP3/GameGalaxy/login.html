@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <header class="header-login">
+        <section class="login-logo">
+            <img class="logo" src="./img/gral/logo.png" alt="logo">
+        </section>
+        <section class="login-user">
+            <button class="play-invited"><a href="home.html">Jugar como invitado</a></button>
+            <img class="icon-icon-profile" id="user-profile" src="img/icons/profile-circle.svg" alt="icon-profile">    
+        </section>
+    </header>
+    
+    <main class="main-container">
+
+        <section class="login" id="login">
+            <section class="desc-login" id="desc-login">
+                <img class="img-login-logo" src="./img/gral/mario-luigi.png" alt="Mario y Luigi">
+                <p>
+                    ¡Descubre un mundo de ventajas al registrarte! Accede a contenido exclusivo, participa en competencias
+                    emocionantes, recibe ofertas especiales y forma parte de una comunidad global de jugadores. ¡Regístrate
+                    ahora para vivir una experiencia de juego inigualable!
+                </p>
+            </section>
+            <section class="login-box" id="login-box">
+                <h1>¡Bienvenido de vuelta!</h1>
+                <h1>Iniciar Sesión</h1>
+                <form class="form" id="form" action="">
+                    <label for="email">Email *</label>
+                    <input type="email" placeholder="Ingrese su email..." name="email" id="email">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" placeholder="Ingrese su contraseña..." name="password" id="password">
+                    
+                    <section class="captcha">
+                        <img src="./img/publicity/captcha.gif" alt="captcha">
+                        <p id="confirm-session">¡Ha iniciado sesión con éxito!</p>
+                    </section>
+                    <section class="register-buttons" id="login-buttons">
+                        <a href="home.html" class="btn-reg register-btn">Iniciar Sesión</a>
+                        <a href="home.html" class="btn-reg register-google-btn">
+                            <img src="img/icons/google.svg" alt="icon-google">
+                            Continuar con Google
+                        </a>
+                        <a href="home.html"class="btn-reg register-fb-btn">
+                            <img src="img/icons/facebook.svg" alt="icon-facebook">
+                            Continuar con facebook
+                        </a>
+                        <div>
+                            <p>¿No tienes cuenta?</p>
+                            <a href="index.html" class="register-iniciar-btn">Registrate</a>
+                        </div>
+                    </section>
+                </form>
+            </section>
+        </section>
+        
+    </main>
+    
+    <script src="js/games.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
