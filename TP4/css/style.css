@@ -1,0 +1,1027 @@
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-BlackItalic';
+    src: url('../fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-BoldItalic';
+    src: url('../fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('../fonts/Lato/Lato-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-LightItalic';
+    src: url('../fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url('../fonts/Lato/Lato-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-ThinItalic';
+    src: url('../fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Homoarakhan';
+    src: url('../fonts/Lato/HOMOARAK.TTF') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    background: #000;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.header {
+    width: 100%;
+    height: 227px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: height 0.5s ease-in-out;
+    background: linear-gradient(180deg, #5499F8 0%, #5499F8 88%, rgba(84, 153, 248, 0) 100%);
+}
+.navbar .menu {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    left: -4px;
+}
+.rect1, .rect2, .rect3 {
+    display: block;
+    width: 34px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFE901;
+    border-radius: 111px;
+    border: 4px #2981FF solid;
+    box-shadow: 4px 5px 0px #02187E;
+}
+.rect2 {top: 11px;}
+.rect3 {top: 22px;}
+
+/* PUNTO 2 ENTREGABLE */
+.rect1.rotate {
+    animation: rect1 1s 1 forwards;
+}
+.rect2.none {
+    display: none;
+}
+.rect3.-rotate {
+    animation: rect3 1s 1 forwards;
+}
+@keyframes rect1 {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        box-shadow: 4px 5px 0px #02187E;
+    }
+    100% {
+        transform: rotate(45deg) translate(0px, 15px);
+        box-shadow: none;
+    }
+}
+@keyframes rect3 {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        box-shadow: 4px 5px 0px #02187E;
+    }
+    100% {
+        transform: rotate(-45deg) translate(0px, -15px);
+        box-shadow: none;
+    }
+}
+.logo {
+    position: absolute;
+    top: 40.08%;
+    left: 21.29%;
+    width: 590px;
+    height: 301px;
+    transition: 0.5s ease-in-out all;
+    opacity: 0;
+    animation: animar 1s 1 forwards;
+    animation-delay: .5s;
+    z-index: 2;
+}
+.navbar .btn-comprar {
+    position: absolute;
+    top: 12px;
+    right: -8px;
+    width: 216px;
+    height: 66px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 111px;
+    border: 8px solid #2982FF;
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.11em;
+    text-align: center;
+    color: #02187E;
+    font-style: normal;
+    line-height: 94.5%; /* 18.9px */
+    cursor: pointer;
+}
+.content {
+    width: 1080px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-container{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: -101px;
+}
+
+/* SECTION 1 EDIFICIOS Y PERSONAJES */
+.section-1 {
+    width: 100%;
+    height: 720px;
+    position: relative;
+}
+.section-1 .content {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.section-1 .img-fondo img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    height: auto;
+}
+.eFondo-1 {
+    position: absolute;
+    top: 2.5%;
+    left: -47px;
+    z-index: 2;
+    transition: 1s ease all;
+}
+.eFondo-2 {
+    position: absolute;
+    bottom: 0.20%;
+    left: 33%;
+    transition: 1s ease all;
+}
+.eFondo-3 {
+    position: absolute;
+    bottom: -1.38%;
+    right: -1px;
+    z-index: 2;
+    transition: 1s ease all;
+}
+.spidey1 {
+    position: absolute;
+    top: 36.38%;
+    left: -0.92%;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    opacity: 0;
+    animation: animar 1s 1 forwards;
+    animation-delay: 1s;
+    transition: 1s ease all;
+}
+.spidey2 {
+    position: absolute;
+    top: 40.8%;
+    left: 27.12%;
+    z-index: 3;
+    opacity: 0;
+    animation: animar 1s 1 forwards;
+    animation-delay: .5s;
+    transition: 1s ease all;
+}
+.spidey3 {
+    position: absolute;
+    top: 29.02%;
+    left: 55.09%;
+    z-index: 2;
+    opacity: 0;
+    animation: animar 1s 1 forwards;
+    animation-delay: 1.5s;
+    transition: 1s ease all;
+}
+.tela1 {
+    position: absolute;
+    top: 187px;
+    right: 604px;
+    z-index: 3;
+    width: 700px;
+    opacity: 0;
+    animation: animar 1s 1 forwards;
+    animation-delay: .5s;
+    transition: 1s ease all;
+}
+.tela2{
+    position: absolute;
+    left: 871px;
+    top: 160px;
+    width: 450px;
+    z-index: 2;
+    opacity: 0;
+    animation: animar 1s 1 forwards;
+    animation-delay: 1.5s;
+    transition: 1s ease all;
+}
+
+
+/* SECTION 2 FONDO VIOLETA */
+
+.section-2 {
+    width: 100%;
+    height: 844.5px;
+    background: url(../img/fondo-violeta.png) repeat;
+    background-size: cover;
+    margin-top: -71.5px;
+    position: relative;
+    z-index: 2;
+    font-family: 'Lato-Regular', sans-serif;
+}
+.content-section-2 {
+    color: white;
+}
+.content-section-2 h1 {
+    position: absolute;
+    top: 25.93%;
+    left: -0.46%;
+    font-size: 60px;
+    width: 646px;
+    word-wrap: break-word;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+}
+.content-section-2 p {
+    position: absolute;
+    top: 42.33%;
+    left: -0.46%;
+    font-size: 20px;
+    width: 580px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.img-juego-section-2 {
+    position: absolute;
+    top: 61.21%;
+    left: -18px;
+}
+.img-duende-section-2 {
+    position: absolute;
+    top: 15.63%;
+    right: -7.87%;
+    transition: top 0.7s ease;
+}
+
+/* SECTION 3 FONDO BLANCO */ 
+
+.section-3 {
+    width: 100%;
+    height: 1085px;
+    background: #FFF;
+    position: relative;
+    z-index: -1;
+    margin-top: -12%;
+}
+/* PUNTO 9 ENTREGABLE ANIMACION A LAS 3 CARDS SECTION 3 */
+.card-1,
+.card-2,
+.card-3 {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 5s ease, transform 1s ease;
+}
+.card-1.appear,
+.card-2.appear,
+.card-3.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-1, .card-2, .card-3 {
+    position: absolute;
+    top: 36.31%;
+    left: 0;
+    transition-duration: 1s;
+}
+.card-2 {
+    left: 372.52px;
+    transition-duration: 2s;
+}
+.card-3 {
+    left: 747.04px;
+    transition-duration: 3s;
+}
+.content-section-3 .h3-section3-1, .h3-section3-2, .h3-section3-3 {
+    position: relative;
+    width: 333px;
+    height: 218px;
+    top: 15px;
+    left: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* SECTION 4 FONDO IMAGEN GHOST */
+
+.section-4  {
+    width: 100%;
+    height: 566px;
+    margin-top: -4.2%;
+    z-index: 2;
+    position: relative;
+}
+.section-4 .img-fondo {
+    z-index: 1;
+}
+.section-4 .img-fondo img {
+    position: absolute;
+    width: 100%;
+}
+.content-section-4-1,
+.content-section-4-2,
+.content-section-4-3 {
+    position: absolute;
+    transform: translateY(0);
+    top: -12.9%;
+    left: -1.11%;
+    z-index: 2;
+    transition: 2s ease all;
+}
+.content-section-4-1 {
+    z-index: 1;
+}
+.content-section-4-2 {
+    top: 14.65%;
+    left: -2.03%;
+}
+.content-section-4-3 {
+    top: 50.2%;
+    left: 0.9%;
+}
+.content-section-4-1 img:hover,
+.content-section-4-2 img:hover,
+.content-section-4-3 img:hover {
+    transform: rotate3D(1, 0, 1, 45deg);
+    transition: .5s ease-in-out all;
+}
+
+.section-5  {
+    width: 100%;
+    height: 983px;
+    margin-top: -5.85%;
+    z-index: 1;
+    position: relative;
+    font-family: 'Lato-Regular', sans-serif;
+}
+.content-section-5 {
+    color: white;
+    font-size: 60px;
+    width: 667px;
+    font-weight: 500;
+    line-height: 56.70px;
+    word-wrap: break-word;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 27.26%;
+    left: 0.37%;
+}
+.img-section-5 {
+    position: absolute;
+    top: 50.15%;
+    left: 0.2074%;
+    width: 1078px;
+    height: 527.626px;
+    overflow: hidden;
+}
+.img-section-5-fondo {
+    box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 0.15)
+}
+.img-section-5-fondo, .img-section-5-capa1, .img-section-5-capa2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 527.626px;
+}
+.img-section-5-capa1 {
+    transform: scale(1.1);
+    z-index: 2;
+}
+.img-section-5-capa2 {
+    transform: scale(1.05);
+    z-index: 3;
+}
+.personajes-section-5 {
+    position: absolute;
+    top: 50.15%;
+    z-index: 2;
+    height: 527.626px;
+    overflow: visible;
+    transition: transform 1s ease-in-out;
+}
+.personajes-section-5 .image-1 {
+    position: absolute;
+    top: -18.02%;
+    left: 26px;
+}
+.personajes-section-5 .image-2 {
+    position: absolute;
+    bottom: 159.1px;
+    left: 450px;
+}
+.personajes-section-5 .image-3 {
+    position: absolute;
+    top: 105.89px;
+    left: 670px;
+}
+
+
+.section-6  {
+    width: 100%;
+    height: 2194.5px;
+    margin-top: -110px;
+    background: url(../img/fondo-section6-1800.svg);
+    position: relative;
+    font-family: 'Lato-Regular', sans-serif;
+}
+.section-6-title h1 {
+    position: absolute;
+    top: 11.61%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1080px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 56.70px;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+}
+.section-6-img-1 {
+    position: absolute;
+    top: 17.36%;
+    left: 0.37%;
+    opacity: 1;
+    /* se le agrega un transition para que haga más fluido el cambio de imagen */
+    transition: opacity 1s ease;
+}
+.section-6-img-2 {
+    position: absolute;
+    top: 35.72%;
+    left: 0.70%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.section-6-img-3 {
+    position: absolute;
+    top: 55.13%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.section-6-img-4 {
+    position: absolute;
+    top: 78.51%;
+    left: 0.37%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.section-6-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 467px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.section-6-text h1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 37.80px;
+    word-wrap: break-word;
+}
+.section-6-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18.90px;
+    word-wrap: break-word;
+}
+.section-6-text-1 {
+    position: absolute;
+    opacity: 1;
+    transition: 1s ease all;
+}
+.section-6-text-2, .section-6-text-3, .section-6-text-4 {
+    position: absolute;
+    opacity: 0;
+    transition: 1s ease all;
+}
+.section-6-text-1 h1, .section-6-text-2 h1, .section-6-text-3 h1, .section-6-text-4 h1,
+.section-6-text-1 p, .section-6-text-2 p, .section-6-text-3 p, .section-6-text-4 p{
+    position: absolute;
+    top: 381.5px;
+    right: 0;
+    width: 470px;
+    transition: 1s ease all;
+}
+.section-6-text-2 h1 {
+    top: 784.5px;
+}
+.section-6-text-3 h1 {
+    top: 1206px;
+}
+.section-6-text-4 h1 {
+    top: 1723px;
+}
+.section-6-text-1 p {
+    top: 481px;
+}
+.section-6-text-2 p {
+    top: 884px;
+}
+.section-6-text-3 p {
+    top: 1344px;
+}
+.section-6-text-4 p {
+    top: 1823px;
+}
+
+/* SECTION 7 FONDO NEGRO */
+
+.section-7  {
+    width: 100%;
+    height: 476.5px;
+    margin-top: -7.5%;
+    position: relative;
+    z-index: 0;
+    font-family: 'Lato-Regular', sans-serif;
+}
+.content-section-7 h1 {
+    width: 816px;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    word-wrap: break-word;
+    position: absolute;
+    top: 25.4%;
+    left: 0.37%;
+}
+.content-section-7 .btn-buy-now {
+    position: absolute;
+    top: 62.74%;
+    left: 0.18%;
+    width: 308px;
+    height: 66px;
+    background: #FFE901;
+    color: #02187E;
+    border: 8px solid #2982FF;
+    border-radius: 111px;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 94.50%;
+    letter-spacing: 0.11em;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* SECTION 8 FONDO BLANCO SPIDEY */
+
+.section-8  {
+    width: 100%;
+    height: 720px;
+    background: url(../img/fondo-section8-3.svg);
+    background-size: cover;
+    margin-top: -8.40%;
+    position: relative;
+    z-index: 1;
+}
+
+/* ANIMACION A LAS 3 CARDS PUNTO 9 */
+.gwen,
+.peter,
+.miles {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 5s ease, transform 1s ease;
+}
+.gwen.appear,
+.peter.appear,
+.miles.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+.img-gwen-stacy,
+.img-peter-parker,
+.img-miles-morales {
+    display: none;
+    cursor: pointer;
+    transform: translate(20%, 30%);
+}
+
+.gwen {
+    position: absolute;
+    top: 172.14px;
+    left: 90px;
+    width: 268px;
+    height: 416.5px;
+    cursor: pointer;
+    transition: 2s ease all;
+}
+.peter {
+    position: absolute;
+    top: 181.14px;
+    left: 294px;
+    width: 416.5px;
+    height: 457.5px;
+    cursor: pointer;
+    transition: 1s ease all;
+
+}
+.miles {
+    position: absolute;
+    top: 181.14px;
+    left: 677px;
+    width: 313.5px;
+    height: 398.5px;
+    cursor: pointer;
+    transition: 3s ease all;
+
+}
+
+/* SECTION 9 FONDO DEGRADE CELESTE ATARDECER */
+
+.section-9  {
+    width: 100%;
+    height: 1296px;
+    background: url(../img/fondo-section9.svg);
+    position: relative;
+    font-family: 'Lato-Regular', sans-serif;
+}
+.content-section-9 h1 {
+    position: absolute;
+    top: 11.72%;
+    left: 12.22%;
+    width: 816px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 56.70px;
+    word-wrap: break-word;
+}
+.input-section-9 input {
+    position: absolute;
+    top: 28.47%;
+    left: 13.88%;
+    background: white;
+    padding: 0 52px;
+    box-shadow: 4px 5px 0px #02187E;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top: 9px #2982FF solid;
+    border-left: 9px #2982FF solid;
+    border-bottom: 9px #2982FF solid;
+    color: rgba(0, 0, 0, 0.39);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18.90px;
+    letter-spacing: 2.20px;
+    word-wrap: break-word;
+    width: 562px;
+    height: 82px;
+}
+.input-section-9 button {
+    position: absolute;
+    top: 28.47%;
+    left: 65.92%;
+    background: #FFE901;
+    box-shadow: 4px 5px 0px #02187E;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 9px #2982FF solid;
+    color: #02187E;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 18.90px;
+    word-wrap: break-word;
+    width: 218px;
+    height: 100px;
+}
+.content-section-9 .span-1 {
+    position: absolute;
+    top: 39.19%;
+    left: 18.70%;
+    width: 578px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18.90px;
+    word-wrap: break-word
+}
+.content-section-9 .span-2 {
+    text-decoration: underline;
+}
+.content-section-9 .img-section-9-teen {
+    position: absolute;
+    top: 47.83%;
+    left: 18.70%;
+}
+.section-9 .img-section9-fondo {
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    top: 576px;
+}
+.content-section-9 .img-section9-1 {
+    position: absolute;
+    top: 85.64%;
+    left: 11.81%;
+    width: 97px;
+    height: 89px;
+    z-index: 2;
+    background: url(../img/spritesheeet-milesFijo.png) center repeat-x;
+    animation: milesFijo 1s steps(11) infinite;
+}
+
+@keyframes milesFijo { 
+	0% { background-position: 0px; }
+        100% { background-position: -1067px; }
+} 
+.content-section-9 .img-section9-2 {
+    position: absolute;
+    top: 82.71%;
+    left: 40.09%;
+    z-index: 2;
+}
+.content-section-9 .img-section9-3 {
+    position: absolute;
+    top: 983px;
+    left: 83.14%;
+    width: 67.9px;
+    height: 64px;
+    z-index: 2;
+    background: url(../img/spritesheet-peterFijo.png) left center repeat-x;
+    animation: peterFijo .4s steps(6) infinite;
+}
+@keyframes peterFijo {
+    0% { background-position: 0px;}
+        100% { background-position: -410px }
+}
+
+/* SECTION 10 FOOTER */
+.section-10 {
+    width: 100%;
+    height: 678px;
+    background: #5E5E5D;
+    position: relative;
+}
+.section-10 .platform-games-section10 {
+    background: #242424;
+    width: 100%;
+    height: 80px;
+}
+.platform-games-section10 .img-platforms-games {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-10-text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato-Light', 'Lato-Regular', sans-serif;
+    line-height: 18.90px;
+    letter-spacing: 2.4px;
+    word-wrap: break-word;
+    width: 820px;
+    height: 361px;
+    position: absolute;
+    top: 17.40%;
+    left: 0;
+}
+.section-10-text span {
+    position: absolute;
+    top: 95%;
+    text-decoration: underline;
+}
+.section-10 .img-section10 {
+    position: absolute;
+    top: 76.25%;
+    left: 0;
+}
+
+
+
+
+
+
+/* ANIMACION OPCIONAL 1 LOADING */
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: red;
+    background-image: url('../img/bg-loading.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.loader img {
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+.progress {
+    margin-top: 10px;
+    font-family: 'Homoarakhan';
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+/* ANIMACION DE HEADER STICKY CUANDO SE SCROLLEA PUNTO 5 */
+
+.header.sticky {
+    position: sticky;
+    height: 103px;
+    z-index: 10;
+    transition: height 0.5s ease-in-out;
+}
+.logo.sticky {
+    top: 17px;
+    left: 474px;
+    width: 133px;
+    height: 68px;
+}
+
+/* ANIMACION A LOS BOTONES COMPRAR PUNTO 10 ENTREGABLE */
+
+.navbar .btn-comprar::before, .content-section-7 .btn-buy-now::before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease-in-out all;
+    border-radius: 50px;
+    z-index: -1;
+}
+.navbar .btn-comprar:hover, .content-section-7 .btn-buy-now:hover {
+    border: 8px solid #FFE901;
+    color: #FFF;
+}
+.navbar .btn-comprar:hover::before, .content-section-7 .btn-buy-now:hover::before {
+    transform: scale(300);
+    background: #2982FF;
+}
+
+/* ANIMACION A LOS PERSONAJES PUNTO 4 ENTRAN CON DELAY */
+
+@keyframes animar {
+    to {
+        opacity: 1;
+    }
+}
+
+.animar {
+    animation: animar .5s 1 forwards;
+}
+
+/* ANIMACIONES HOVER PARA SECTION 8 PUNTO 9 ENTREGABLE */
+
+.gwen.hoverGwen {
+    top: 114px;
+    left: 80px;
+    width: 395px;
+    height: 614px;
+}
+.peter.hoverGwen {
+    top: 244px;
+    left: 472px;
+    width: 323px;
+    height: 355px;
+    filter: blur(5px);
+}
+.miles.hoverGwen {
+    top: 244px;
+    left: 769px;
+    width: 243px;
+    height: 309px;
+    filter: blur(5px);
+}
+.gwen.hoverPeter {
+    top: 296px;
+    left: 74px;
+    width: 219px;
+    height: 341px;
+    filter: blur(5px);
+}
+.peter.hoverPeter {
+    top: 116px;
+    left: 184px;
+    width: 616px;
+    height: 676px;
+}
+.miles.hoverPeter {
+    top: 331px;
+    left: 761px;
+    width: 257px;
+    height: 326px;
+    filter: blur(5px);
+}
+.gwen.hoverMiles {
+    top: 244px;
+    left: 152px;
+    width: 226px;
+    height: 352px;
+    filter: blur(5px);
+}
+.peter.hoverMiles {
+    top: 251px;
+    left: 324px;
+    width: 352px;
+    height: 386px;
+    filter: blur(5px);
+}
+.miles.hoverMiles {
+    top: 63px;
+    left: 594px;
+    width: 497px;
+    height: 631px;
+}
+
+
+/* ANIMACION SPRITESHEET PARA SPIDER NEGRO | MILES */
+.content-section-9 .img-section9-1:hover {
+    width: 106.75px;
+    height: 59px;
+    top: 1135px;
+    margin: auto;
+    background: url(../img/spritesheet-milesHover.png) left center repeat-x;
+    animation: milesHover .5s steps(4) infinite;
+}
+
+@keyframes milesHover { 
+	0% { background-position: 0px; }
+        100% { background-position: -427px; }
+}
+
+/* ANIMACION SPRITESHEET PARA SPIDER AZUL | PETER */
+.content-section-9 .img-section9-3:hover {
+    top: 952px;
+    width: 94px;
+    height: 96px;
+    background: url(../img/spritesheet-peterHover.png) left center repeat-x;
+    animation: peterHover 1.5s steps(8) infinite;
+}
+
+@keyframes peterHover { 
+	0% { background-position: 0px; }
+        100% { background-position: -752px; }
+} 
